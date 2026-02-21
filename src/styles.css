@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Lobster&family=Roboto+Slab:wght@100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+:root{
+      font-family: "Roboto Slab", serif;
+}
+
+.active{
+      background-color: #1E2939;
+      color: #2B7FFF;
+}

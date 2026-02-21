@@ -1,0 +1,31 @@
+<section class="py-20 bg-slate-900">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex justify-between items-center mb-8">
+      <h2 class="text-3xl font-semibold text-white">Trending Movies</h2>
+      <a class="text-sm text-brand hover:underline"> See More → </a>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      @for (movie of moviesList.slice(0, 4); track movie.id) {
+        <div
+          class="group h-64 bg-slate-800 rounded-base hover:-translate-y-2 transition-transform overflow-hidden bg-cover bg-center shadow-xs relative"
+          [style.background-image]="'url(https://image.tmdb.org/t/p/w500' + movie.poster_path + ')'"
+        >
+          <div
+            class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0 rounded-base"
+          ></div>
+
+          <div
+            class="relative z-10 h-full flex items-center justify-center opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-white text-center"
+          >
+            <h5
+              class="text-2xl font-semibold tracking-tight leading-8 text-shadow-2xs shadow text-shadow-zinc-600"
+            >
+              {{ movie.title || movie.name }}
+            </h5>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
