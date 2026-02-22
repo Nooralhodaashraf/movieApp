@@ -4,33 +4,30 @@
       class="max-w-7xl mx-auto px-6 grid p-2.5 grid-cols-1 md:grid-cols-2 gap-12 items-center rounded"
     >
       <div class="text-center md:text-left">
-        <h1 class="text-5xl font-bold mb-6">
+        <h1 class="text-4xl sm:text-5xl font-bold mb-6">
           Hi, I'm <span class="text-brand p-1">Nooralhoda</span>
           <span class="item">
             <i class="fa-solid text-amber-300 fa-hand-point-right"></i
             ><i class="fa-solid text-amber-300 fa-hand-point-left"></i>
           </span>
-          <!-- 👋 -->
         </h1>
 
-        <p class="text-xl text-slate-300 leading-relaxed max-w-xl">
-          <span class="text-brand p-1">Route</span>student <br />
-          This website is a Front-End task assigned by our instructor\<span class="text-brand p-1"
-            >Ahmed Menisy</span
-          >
-          , and built to demonstrate my skills in structuring, styling, and handling logic using
-          modern web technologies.
+        <p class="text-lg sm:text-xl text-slate-300 leading-relaxed max-w-xl mx-auto md:mx-0">
+          <span class="text-brand p-1">Route</span> student <br />
+          This website is a Front-End task assigned by our instructor
+          <span class="text-brand p-1">Ahmed Menisy</span>, and built to demonstrate my skills in
+          structuring, styling, and handling logic using modern web technologies.
         </p>
 
-        <div class="mt-10 flex justify-center md:justify-start gap-4">
+        <div class="mt-8 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
           <a
-            class="px-6 py-3 bg-brand text-black font-semibold rounded-lg hover:opacity-90 transition"
+            class="px-6 py-3 bg-brand text-black font-semibold rounded-lg hover:opacity-90 transition text-center"
             routerLink="/trendify"
           >
             View Movies
           </a>
           <a
-            class="px-6 py-3 border border-slate-600 rounded-lg hover:bg-slate-800 transition"
+            class="px-6 py-3 border border-slate-600 rounded-lg hover:bg-slate-800 transition text-center"
             routerLink="/products"
           >
             View Products
@@ -38,9 +35,9 @@
         </div>
       </div>
 
-      <div class="flex justify-center md:justify-end">
+      <div class="flex justify-center md:justify-end mt-8 md:mt-0">
         <div
-          class="w-72 h-72 md:w-96 md:h-96 rounded-2xl overflow-hidden shadow-lg border border-slate-700"
+          class="w-64 h-64 sm:w-72 sm:h-72 md:w-96 md:h-96 rounded-2xl overflow-hidden shadow-lg border border-slate-700"
         >
           <img
             src="..\imgs\WhatsApp Image 2026-02-21 at 9.49.52 PM.jpeg"
@@ -51,12 +48,12 @@
       </div>
     </div>
   </div>
+
   <div class="py-20 bg-slate-950 text-white rounded">
     <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-4xl font-semibold mb-12 text-center">Technologies Used</h2>
+      <h2 class="text-3xl sm:text-4xl font-semibold mb-12 text-center">Technologies Used</h2>
 
-      <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
-        <!-- Card -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
         <div class="bg-slate-800 rounded-xl p-6 text-center hover:-translate-y-2 transition">
           <h3 class="text-xl font-semibold">HTML</h3>
           <p class="text-slate-400 mt-2">Structure</p>
@@ -84,12 +81,13 @@
       </div>
     </div>
   </div>
+
   <div class="py-20 bg-slate-900 text-white rounded">
     <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-4xl font-semibold mb-12 text-center">Tools & Features</h2>
+      <h2 class="text-3xl sm:text-4xl font-semibold mb-12 text-center">Tools & Features</h2>
 
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-slate-800 rounded-xl p-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-slate-800 rounded-xl p-6 sm:p-8">
           <h3 class="text-2xl font-semibold mb-3">UI & Styling</h3>
           <ul class="text-slate-300 space-y-2">
             <li>✔ Tailwind CSS</li>
@@ -98,12 +96,13 @@
           </ul>
         </div>
 
-        <div class="bg-slate-800 rounded-xl p-8">
+        <div class="bg-slate-800 rounded-xl p-6 sm:p-8">
           <h3 class="text-2xl font-semibold mb-3">Logic & Architecture</h3>
           <ul class="text-slate-300 space-y-2">
             <li>✔ Angular Routing</li>
             <li>✔ API Integration</li>
             <li>✔ Dependency Injection</li>
+            <li>✔ Lazy Loading Components</li>
           </ul>
         </div>
       </div>
